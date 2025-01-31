@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 98%;
+    border: black solid 0.12vw;;
+    margin-left: 1%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+    body {
+        border: none;
+        margin: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: gray;
+    }
+
+    .svg_picture,
+    .small_fire,
+    .big_fire {
+        filter: invert();
+    }
+}
+

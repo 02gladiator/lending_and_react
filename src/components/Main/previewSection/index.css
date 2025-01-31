@@ -1,0 +1,99 @@
+.preview {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-bottom: solid 2px black;
+}
+
+.column_with_logo_and_cactus {
+    border-right: solid 2px black;
+}
+
+.logo-container img {
+    max-width: 100%;
+    padding: 1%;
+    width: 50vw;
+    height: 30vw;
+}
+
+.sauce_and_cactus-container img {
+    max-width: 100%;
+    margin-left: 1.5vw;
+    padding: 2%;
+    width: 45vw;
+    height: 30vw;
+}
+
+.sauce_and_hand-container {
+    border-top: 2px solid black;
+    width: 48.5vw;
+}
+
+.sauce_and_hand-container img {
+    width: 45vw;
+    height: 55vw;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: calc(24px + 24 * (75vw / 1280));
+    padding: 1%;
+}
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: calc(24px + (24 + 24 * 0.7) * ((75vw - 320px) / 1280));
+    }
+
+    .preview {
+        grid-template-columns: 1fr;
+
+    }
+
+    .logo-container img {
+        max-width: 100%;
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .column_with_logo_and_cactus {
+        width: 100%;
+        border: none;
+    }
+
+    .logo-container img {
+        max-width: 100%;
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .sauce_and_cactus-container img {
+        max-width: 100%;
+        width: 97vw;
+        height: 60vw;
+        margin-top: 1%;
+    }
+
+    .column_with_main_heading {
+        width: 100%;
+        border-top: black solid 0.12vw;
+    }
+
+    .sauce_and_hand-container{
+        width: 100%;
+    }
+
+    .sauce_and_hand-container img {
+        max-width: 100%;
+        margin: 0;
+        width: 100vw;
+        height: 100vw;
+    }
+
+}

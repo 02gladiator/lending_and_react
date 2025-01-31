@@ -1,0 +1,15 @@
+footer {
+    width: 100%;
+    height: 2vw;
+    display: flex;
+    background: #CDFD3B;
+    border-top: black solid 0.12vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+footer a {
+    color: black;
+}
+

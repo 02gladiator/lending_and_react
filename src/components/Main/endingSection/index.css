@@ -1,0 +1,30 @@
+.ending-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.green_fire{
+    max-width: 100%;
+    width: 100vw;
+    margin-top: -15%;
+    z-index: -1;
+}
+
+.background_for_logo{
+    max-width: 98%;
+    width: 100vw;
+    position: absolute;
+    top: 0.5%;
+    left: 1%;
+}
+
+.logo{
+    max-width: 100%;
+    position: absolute;
+    width: 55vw;
+    height: 30vw;
+    top: 20%;
+    left: 23%;
+}
