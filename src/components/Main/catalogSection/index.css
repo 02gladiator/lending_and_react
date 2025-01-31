@@ -1,0 +1,123 @@
+.slogan {
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: calc(16px + 24 * (75vw / 1280));
+    text-align: center;
+}
+
+.slogan img {
+    width: 10vw;
+    height: 7vw;
+    margin-left: 1%;
+}
+
+.products {
+    border-top: black solid 2px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    position: relative;
+    width: 3.1vw;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-container img {
+    max-width: 95%;
+    width: 31vw;
+    margin-top: -24%;
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+}
+
+.text_on_sauce {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: calc(8px + 10 * (75vw / 1280));
+    top: 9%;
+
+}
+
+.text_on_sauce_2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: calc(8px + 20 * (75vw / 1280));
+    top: 11%;
+}
+
+.big_photo {
+    width: 95vw;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+@media (max-width: 960px) {
+    .products {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .icons-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .small_fire {
+        display: none;
+    }
+
+    .big_fire {
+        position: absolute;
+        width: 5%;
+    }
+
+    .product-container {
+        width: 180%;
+        margin-left: 20%;
+        margin-right: 15%;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+
+    }
+
+    .product-container img {
+        width: 47vw;
+        height: 80vw;
+        margin-top: 0;
+    }
+
+    .text_on_sauce {
+        top: 24%;
+        left: -7%;
+        font-size: calc(11px + 10 * (75vw / 1280));
+    }
+
+    .text_on_sauce_2 {
+        top: 25%;
+        left: -7%;
+        font-size: calc(16px + 10 * (75vw / 1280));
+    }
+
+    .big_photo img {
+        width: 98vw;
+    }
+}
